@@ -5,7 +5,7 @@ public class MiniMarket {
 	private String name;
 	private Document document;
 	public MiniMarket(String name) {
-		this.name = name;
+		this.setName(name);
 		
 		List = new ArrayList<Document>();
 	}
@@ -19,6 +19,12 @@ public class MiniMarket {
 
 	}
 	return info;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
