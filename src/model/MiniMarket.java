@@ -15,7 +15,7 @@ public class MiniMarket {
 	public String infoclients() {
 		String info = "Los documentos de los clientes que se ingresaron fueron:\n";
 		for (int i = 0; i < List.size() ; i++) {
-			info += "===================\n "+i + ") " + List.get(i).getNumber()+ "" + List.get(i).getType() + "\n";
+			info += "===================\n "+(i+1) + ")  El Documento es: " + List.get(i).getNumber()+ "|| El tipo de documento es: " + List.get(i).getType() + "\n";
 
 	}
 	return info;

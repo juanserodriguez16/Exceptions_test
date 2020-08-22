@@ -1,10 +1,14 @@
 package Exceptions;
 
 public class TiException extends Exception {
-	
+	String message;
 	public TiException () {
-		super("The Document cant be TI");
+		message = "The Document cant be TI, you need to be a legal age";
 		
+	}
+	
+	public String ShowMessage() {
+		return message;
 	}
 
 }
