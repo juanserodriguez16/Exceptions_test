@@ -12,6 +12,14 @@ public class MiniMarket {
 	public void addDocument(Document document) {
 		List.add(document);
 	}
+	public boolean addDocumentboolean(Document Document) {
+		
+		boolean added = false;
+		if(List.add(document)) {
+			added = true;
+		}
+		return added;
+	}
 	public String infoclients() {
 		String info = "Los documentos de los clientes que se ingresaron fueron:\n";
 		for (int i = 0; i < List.size() ; i++) {
